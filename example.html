@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+
+  <link rel="stylesheet" href="css/d3Table.css">      
+  
+  <style type="text/css"> 
+ body{
+	padding-top: 40px !important;   /* make room for navbar */
+ }
+	html {
+		height: 100%;
+    	margin: 0;
+    	padding: 0;
+	} 
+
+
+/* Scroller bar stuff */
+.wrapper{margin:10px;width:320px; height: 100%; overflow:hidden; position:relative; display:inline-block; zoom:1; _display:inline; text-align:justify; vertical-align:top;}		
+
+
+#horiz{padding-bottom:20px;}
+#horiz .wrapped{width:900px;}
+
+#vert {padding-right:20px;}
+
+	table {
+		font-family: Helvetica;
+		font-size: 11px;
+		height: 15px;
+		line-height: 14px;
+		border-spacing: 0px;
+		border-collapse: collapse;
+	}
+
+	#tablearea {
+		padding: 15px;
+	}
+
+
+  </style>
+<!--    <link rel="stylesheet" type="text/css" href="css/ScrollerBar.css" media="all" />   -->
+
+</head>
+
+<body onLoad="onLoad()">
+
+	<button id="addCSCO" onclick="">Add CSCO</button>	
+	<button id="addAMZN" onclick="">Add AMZN</button>
+	<button id="addARMH" onclick="">Add ARMH</button>
+	<div id="tablearea" style="padding: 20px;">
+		
+	</div>
+
+  	<script type="text/javascript" src="js/libs/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/d3.v2.js"></script>
+	<script src="js/d3Table.js"></script> 
+	<script defer src="example.js"></script> 
+</body>
+    
+
